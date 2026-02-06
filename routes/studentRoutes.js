@@ -10,7 +10,7 @@ router.post("/", async (req, res) => {
   res.json(student);
 });
 
-// READ
+// READING
 router.get("/", async (req, res) => {
   const students = await Student.find();
   res.json(students);
